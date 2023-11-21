@@ -14,10 +14,11 @@ import { ContentEditable } from "@lexical/react/LexicalContentEditable";
 import { OnChangePlugin } from "@lexical/react/LexicalOnChangePlugin";
 import { HistoryPlugin } from "@lexical/react/LexicalHistoryPlugin";
 import LexicalErrorBoundary from "@lexical/react/LexicalErrorBoundary";
-import { theme } from "./constant/theme";
+import { theme } from "../../constant/theme";
 import { useState } from "react";
 import { EditorState } from "lexical";
-import { MATCHERS } from "./constant/MATCHERS";
+import { MATCHERS } from "../../constant/MATCHERS";
+import styles from "./Editor.module.css";
 
 // Catch any errors that occur during Lexical updates and log them
 // or throw them as needed. If you don't throw them, Lexical will
@@ -26,36 +27,39 @@ function onError(error: Error) {
   console.error(error);
 }
 
-export default function Editor() {
+export function Editor() {
   const [editorState, setEditorState] = useState<EditorState>();
   const initialConfig = {
     namespace: "MyEditor",
     theme: theme,
     onError,
+    node: [],
   };
 
   return (
-    <LexicalComposer initialConfig={initialConfig}>
-      <RichTextPlugin
-        contentEditable={<ContentEditable className="editable-container" />}
-        placeholder={<></>}
-        ErrorBoundary={LexicalErrorBoundary}
-      />
-      <OnChangePlugin onChange={(editorState) => setEditorState(editorState)} />
-      <button
-        onClick={() => {
-          console.log(editorState?.toJSON());
-        }}
-      />
-      <HistoryPlugin />
-      <LinkPlugin />
+    <div className={styles.editorContainer}>
+      <LexicalComposer initialConfig={initialConfig}>
+        <RichTextPlugin
+          contentEditable={
+            <ContentEditable className={styles.editorEditableContainer} />
+          }
+          placeholder={
+            <p className={styles.editorPlaceholder}>Write Something...</p>
+          }
+          ErrorBoundary={LexicalErrorBoundary}
+        />
+        <OnChangePlugin
+          onChange={(editorState) => setEditorState(editorState)}
+        />
+        <HistoryPlugin />
+        {/* <LinkPlugin />
       <ListPlugin />
       <CheckListPlugin />
       <TabIndentationPlugin />
       <ClearEditorPlugin />
-      <MarkdownShortcutPlugin />
-      <AutoLinkPlugin matchers={MATCHERS} />
-      {/* <MyCustomAutoFocusPlugin /> */}
-    </LexicalComposer>
+      <MarkdownShortcutPlugin /> */}
+        {/* <AutoLinkPlugin matchers={MATCHERS} /> */}
+      </LexicalComposer>
+    </div>
   );
 }

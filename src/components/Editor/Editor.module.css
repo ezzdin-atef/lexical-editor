@@ -1,0 +1,15 @@
+.editorContainer {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.editorPlaceholder {
+    color: #aaa;
+}
+.editorEditableContainer {
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 5px;
+}
+.editorEditableContainer:focus {
+    outline: none;
+    border-color: #aaa;
+}
