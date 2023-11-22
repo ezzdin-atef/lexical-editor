@@ -191,6 +191,13 @@
   dependencies:
     regenerator-runtime "^0.14.0"
 
+"@babel/runtime@^7.23.1":
+  version "7.23.4"
+  resolved "https://registry.yarnpkg.com/@babel/runtime/-/runtime-7.23.4.tgz#36fa1d2b36db873d25ec631dcc4923fdc1cf2e2e"
+  integrity sha512-2Yv65nlWnWlSpe3fXEyX5i7fx5kIKo4Qbcj+hMO0odwaneFjfXw5fdum+4yL20O0QiaHpia0cYQ9xpNMqrBwHg==
+  dependencies:
+    regenerator-runtime "^0.14.0"
+
 "@babel/template@^7.22.15":
   version "7.22.15"
   resolved "https://registry.yarnpkg.com/@babel/template/-/template-7.22.15.tgz#09576efc3830f0430f4548ef971dde1350ef2f38"
@@ -418,7 +425,7 @@
     "@jridgewell/resolve-uri" "^3.1.0"
     "@jridgewell/sourcemap-codec" "^1.4.14"
 
-"@lexical/clipboard@0.12.4":
+"@lexical/clipboard@0.12.4", "@lexical/clipboard@^0.12.4":
   version "0.12.4"
   resolved "https://registry.yarnpkg.com/@lexical/clipboard/-/clipboard-0.12.4.tgz#b9c3a38ab98a67c678ee80238036a166d3161491"
   integrity sha512-kFR+UdhtLCMTQgZCyDmYzp2yjPFMNpUZ4TaRjuRBpCRFYwKMlgie4p1J4VJm6sT23kkAFZtVjOfp+gDEYnPHRQ==
@@ -428,7 +435,7 @@
     "@lexical/selection" "0.12.4"
     "@lexical/utils" "0.12.4"
 
-"@lexical/code@0.12.4":
+"@lexical/code@0.12.4", "@lexical/code@^0.12.4":
   version "0.12.4"
   resolved "https://registry.yarnpkg.com/@lexical/code/-/code-0.12.4.tgz#aa91cf1b070e012b359e9ba023ef880ed8c7fec0"
   integrity sha512-pX7rJCjbjCl6VdOPl2hl/UkjP3iPPyCQgH2VQ+WlXapDd+0uZ54nPL1MKCCaFUZocHPmOmSRKKGUp6K2CNiqzg==
@@ -448,7 +455,7 @@
   dependencies:
     "@lexical/utils" "0.12.4"
 
-"@lexical/history@0.12.4":
+"@lexical/history@0.12.4", "@lexical/history@^0.12.4":
   version "0.12.4"
   resolved "https://registry.yarnpkg.com/@lexical/history/-/history-0.12.4.tgz#bb97c6a079d57ea446f40d7de647e9ee5c7f63cd"
   integrity sha512-XLbSSr9FueAxuKHo4LBi+lZNVAEReNNDCt4MM2Ol8UZhWPlpNskSB/sECYEEQ6/ItlzgtnKyKWjfDFBHRWvC2g==
@@ -463,14 +470,14 @@
     "@lexical/selection" "0.12.4"
     "@lexical/utils" "0.12.4"
 
-"@lexical/link@0.12.4":
+"@lexical/link@0.12.4", "@lexical/link@^0.12.4":
   version "0.12.4"
   resolved "https://registry.yarnpkg.com/@lexical/link/-/link-0.12.4.tgz#364628ae06396cd0182c978efaa9e66d77b34758"
   integrity sha512-gmEs0GJGDhgwV1x0IrO7Br2GCALijZLIayGWoLAgYiXZee4WZpvjbngZuC6yghYBhrme6muPRMG2sLMwV2cWiQ==
   dependencies:
     "@lexical/utils" "0.12.4"
 
-"@lexical/list@0.12.4":
+"@lexical/list@0.12.4", "@lexical/list@^0.12.4":
   version "0.12.4"
   resolved "https://registry.yarnpkg.com/@lexical/list/-/list-0.12.4.tgz#f57fe71ff599e298569722e0364c26a5cf417082"
   integrity sha512-qxwRIz+4Aj2u2fzyGPo86vX+1ebwCnamppr/c5ZWuqpRTWtYDWjq5LQKIwAvZBxCzPdtP5jzwyZ6VYWQXYW4Kg==
@@ -484,7 +491,7 @@
   dependencies:
     "@lexical/utils" "0.12.4"
 
-"@lexical/markdown@0.12.4":
+"@lexical/markdown@0.12.4", "@lexical/markdown@^0.12.4":
   version "0.12.4"
   resolved "https://registry.yarnpkg.com/@lexical/markdown/-/markdown-0.12.4.tgz#ca492a9c76ce7d24e49a51603f770fdfe23d0b51"
   integrity sha512-cOk0dkafyvQI4DMwwMfkP329bRVfyhXcVF3dcRiydl6ZIgqOrj/EMi+C0qxQkcqg0MO26Rky6LLJ4vQi6AgJDg==
@@ -496,7 +503,7 @@
     "@lexical/text" "0.12.4"
     "@lexical/utils" "0.12.4"
 
-"@lexical/offset@0.12.4":
+"@lexical/offset@0.12.4", "@lexical/offset@^0.12.4":
   version "0.12.4"
   resolved "https://registry.yarnpkg.com/@lexical/offset/-/offset-0.12.4.tgz#00c0020a98e32216bd6f119949d3a3bd64b4b139"
   integrity sha512-6fjXCx+YD1TMl6GFL4wowhBgbIg+UX3j2OOXh3F7WEp3SDvzoJsJ6F7xRctrHQbluCITM3oDwOyHa1J0m5lrFg==
@@ -540,24 +547,24 @@
   resolved "https://registry.yarnpkg.com/@lexical/rich-text/-/rich-text-0.12.4.tgz#545a1d6bd88e930c572d17fe504a8796f6af0c9d"
   integrity sha512-gWMDmdRRFPk00JfQv52650qcpjTN6oBrrYwBydYvEG8WTC8o1k8qEOZaOFja6GElPt0520dpyvcWHTlIL0jv3Q==
 
-"@lexical/selection@0.12.4":
+"@lexical/selection@0.12.4", "@lexical/selection@^0.12.4":
   version "0.12.4"
   resolved "https://registry.yarnpkg.com/@lexical/selection/-/selection-0.12.4.tgz#756922edbf42f3cb0bd6f99239d77ba2615c859c"
   integrity sha512-9lJt9PBJW7lWYiPDo/PGl2nZ6NrdYaDBidEoMNhyusPjeBEr35z4Hm0qWUhDrPDQPhK2i1oBw6nZa94bxuS9Lw==
 
-"@lexical/table@0.12.4":
+"@lexical/table@0.12.4", "@lexical/table@^0.12.4":
   version "0.12.4"
   resolved "https://registry.yarnpkg.com/@lexical/table/-/table-0.12.4.tgz#b40426de069b7e962e95e38f2ff1bc10ca649388"
   integrity sha512-Lyy6y1HOQqzU8O2cH5Zhzek46B0UU7NceM2fJKM7qiBSuxY/nE0BzkFq0xDk3x5W+vhXob6Z32sJSNFImtuqKw==
   dependencies:
     "@lexical/utils" "0.12.4"
 
-"@lexical/text@0.12.4":
+"@lexical/text@0.12.4", "@lexical/text@^0.12.4":
   version "0.12.4"
   resolved "https://registry.yarnpkg.com/@lexical/text/-/text-0.12.4.tgz#65ba9620492d673cd68c8380725d4e4fe845e603"
   integrity sha512-r/7402eCf6C/7BqUNR7ZLZQQjsE62wjeuf0rFeW1ulOpwiti/dFn1o+EsCb0hvNeHPzfGgRC+FuDT9KSEKu7Ig==
 
-"@lexical/utils@0.12.4":
+"@lexical/utils@0.12.4", "@lexical/utils@^0.12.4":
   version "0.12.4"
   resolved "https://registry.yarnpkg.com/@lexical/utils/-/utils-0.12.4.tgz#83ed97d31201e1b911cfa38b940909c3cca41d77"
   integrity sha512-ColV11ANBY6deT7CdGwP4lzv3pb5caFfFLcVKdGDMMJSUYFQ5l69aZvDP2qWWnNqzGLb+AJSunMd142wWc5LGg==
@@ -984,6 +991,11 @@ chokidar@^3.5.3:
     readdirp "~3.6.0"
   optionalDependencies:
     fsevents "~2.3.2"
+
+clsx@^2.0.0:
+  version "2.0.0"
+  resolved "https://registry.yarnpkg.com/clsx/-/clsx-2.0.0.tgz#12658f3fd98fafe62075595a5c30e43d18f3d00b"
+  integrity sha512-rQ1+kcj+ttHG0MKVGBUXwayCCF1oh39BF5COIpRzuCEv8Mwjv0XucrI2ExNTOn9IlLifGClWQcU9BrZORvtw6Q==
 
 color-convert@^1.9.0:
   version "1.9.3"
@@ -1996,6 +2008,13 @@ supports-preserve-symlinks-flag@^1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/supports-preserve-symlinks-flag/-/supports-preserve-symlinks-flag-1.0.0.tgz#6eda4bd344a3c94aea376d4cc31bc77311039e09"
   integrity sha512-ot0WnXS9fgdkgIcePe6RHNk1WA8+muPa6cSjeR3V8K27q9BB1rTE3R1p7Hv0z1ZyAc8s6Vvv8DIyWf681MAt0w==
+
+tailwind-merge@^2.0.0:
+  version "2.0.0"
+  resolved "https://registry.yarnpkg.com/tailwind-merge/-/tailwind-merge-2.0.0.tgz#a0f3a8c874ebae5feec5595614d08245a5f88a39"
+  integrity sha512-WO8qghn9yhsldLSg80au+3/gY9E4hFxIvQ3qOmlpXnqpDKoMruKfi/56BbbMg6fHTQJ9QD3cc79PoWqlaQE4rw==
+  dependencies:
+    "@babel/runtime" "^7.23.1"
 
 tailwindcss@^3.3.5:
   version "3.3.5"
