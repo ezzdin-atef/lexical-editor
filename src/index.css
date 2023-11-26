@@ -1,11 +1,10 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
 
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-
-
-body {
+.editor-container {
   font-family: 'Roboto', sans-serif;
 }
 
@@ -36,16 +35,11 @@ h1 {
 }
 
 .editor-container {
-  margin: 20px auto 20px auto;
-  border-radius: 2px;
-  max-width: 600px;
   color: #000;
   position: relative;
   line-height: 20px;
   font-weight: 400;
   text-align: left;
-  border-top-left-radius: 10px;
-  border-top-right-radius: 10px;
 }
 
 .editor-inner {
@@ -351,6 +345,8 @@ pre::-webkit-scrollbar-thumb {
   border-radius: 10px;
   padding: 8px;
   cursor: pointer;
+  justify-content: center;
+  align-items: center;
   vertical-align: middle;
 }
 
